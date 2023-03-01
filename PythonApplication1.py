@@ -92,9 +92,9 @@ sum0 = schet(num0)
 
 
 
-# i=1               
-# for x in range(len(num3)):
-#     if num0[x]: print ('X',end='   ')
-#     else: print('.',end='   ')
-#     if (i%3==0): print ('\n')
-#     i+=1
+i=1               
+for x in range(len(num3)):
+    if num0[x]: print ('X',end='   ')
+    else: print('.',end='   ')
+    if (i%3==0): print ('\n')
+    i+=1

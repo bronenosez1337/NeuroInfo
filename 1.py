@@ -1,6 +1,6 @@
 import numpy as np
 from random import randint
-index=100
+index=30
 w = []
 for i in range(15):
     w.append(0)
@@ -17,7 +17,7 @@ for i in range(15):
 #              4, 5, 3, 2, 9, 3, 5, 6, 3, 2]
 training = []
 # Случайная выборка
-for i in range(500):
+for i in range(200):
     training.append(randint(0,9))
 print ("Выбока из {0} чисел для обучения сети = {1}".format(len(training),training))
 
@@ -108,13 +108,24 @@ for i in training:
         if not schet((num5)):
             reward(num5)
 
-print("0 это 5? ", schet(num0))
-print("1 это 5? ", schet(num1))
-print("2 это 5? ", schet(num2))
-print("3 это 5? ", schet(num3))
-print("4 это 5? ", schet(num4))
-print("5 это 5? ", schet(num5))
-print("6 это 5? ", schet(num6))
-print("7 это 5? ", schet(num7))
-print("8 это 5? ", schet(num8))
-print("9 это 5? ", schet(num9))
+
+if schet(num0): print ("0 is a 5?\t Yes")
+else: print("0 is a 5?\t No")
+if schet(num1): print ("1 is a 5?\t Yes")
+else: print("1 is a 5?\t No")
+if schet(num2): print ("2 is a 5?\t Yes")
+else: print("2 is a 5?\t No")
+if schet(num3): print ("3 is a 5?\t Yes")
+else: print("3 is a 5?\t No")
+if schet(num4): print ("4 is a 5?\t Yes")
+else: print("4 is a 5?\t No")
+if schet(num5): print ("5 is a 5?\t Yes")
+else: print("5 is a 5?\t No")
+if schet(num6): print ("6 is a 5?\t Yes")
+else: print("6 is a 5?\t No")
+if schet(num7): print ("7 is a 5?\t Yes")
+else: print("7 is a 5?\t No")
+if schet(num8): print ("8 is a 5?\t Yes")
+else: print("8 is a 5?\t No")
+if schet(num9): print ("9 is a 5?\t Yes")
+else: print("9 is a 5?\t No")
